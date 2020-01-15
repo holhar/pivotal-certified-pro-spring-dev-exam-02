@@ -45,8 +45,6 @@ import static org.junit.jupiter.api.Assertions.*;
  * @author Iuliana Cosmina
  * @since 1.0
  */
-// comment the @Disabled annotation to run the test
-@Disabled
 public class SimpleOperationsServiceTest extends SimpleServiceTestBase {
     static final Long DETECTIVE_ID = 1L;
     static final String BADGE_NO = "NY112233";
