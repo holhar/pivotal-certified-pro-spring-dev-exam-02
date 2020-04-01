@@ -41,9 +41,8 @@ import static org.junit.Assert.assertNotNull;
  * @author Iuliana Cosmina
  * @since 1.0
  */
-// TODO 11. Modify this test class to use more than one configuration class
 @RunWith(SpringRunner.class)
-@ContextConfiguration(classes = {FullConfig.class})
+@ContextConfiguration(classes = {DbConfig.class, RepositoryConfig.class})
 public class FullConfigTest {
 
     @Autowired
