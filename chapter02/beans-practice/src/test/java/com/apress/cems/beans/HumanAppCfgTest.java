@@ -38,8 +38,6 @@ import static org.junit.jupiter.api.Assertions.*;
  * @author Iuliana Cosmina
  * @since 1.0
  */
-// Comment the @Disabled annotation to run your test
-@Disabled
 class HumanAppCfgTest {
 
     @Test

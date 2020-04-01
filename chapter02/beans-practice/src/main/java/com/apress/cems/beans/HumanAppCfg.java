@@ -27,6 +27,7 @@ SOFTWARE.
 */
 package com.apress.cems.beans;
 
+import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 
@@ -37,4 +38,14 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 @ComponentScan(basePackages = {"com.apress.cems.beans"} )
 public class HumanAppCfg {
+
+    @Bean
+    public Item item() {
+        return new Book("Pivotal Certified Professional Core Spring 5 Developer");
+    }
+
+    @Bean
+    public Human human(Item item) {
+        return new Person(item);
+    }
 }

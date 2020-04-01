@@ -31,12 +31,13 @@ package com.apress.cems.beans;
  * @author Iuliana Cosmina
  * @since 1.0
  */
-// TODO 8. Add  a bean definition
 public class Person implements Human {
 
     private Item item;
 
-    // TODO 9. Add a constructor and inject a bean of type Item
+    public Person(Item item) {
+        this.item = item;
+    }
 
     @Override
     public Item getItem() {
